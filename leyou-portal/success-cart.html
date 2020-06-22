@@ -44,10 +44,10 @@
         <h3><i class="sui-icon icon-pc-right"></i>商品已成功加入购物车！</h3>
         <div class="goods">
             <div class="left-good">
-                <div class="left-pic"><img :src="selectedsku.image"></div>
+                <div class="left-pic"><img :src="selectedSku.images"></div>
                 <div class="right-info">
-                    <p class="title">{{selectedsku.title}}</p>
-                    <p class="attr">颜色：{{ownSpec}} 数量：{{selectedsku.num}}</p>
+                    <p class="title">{{selectedSku.title}}</p>
+                    <p class="attr">颜色：{{ownSpec}} 数量：{{selectedSku.num}}</p>
                 </div>
             </div>
             <div class="right-gocart">
@@ -603,6 +603,7 @@
 <script type="text/javascript">$(".footer").load("foot.html");</script>
 <!--页面底部END-->
 <!--页面底部END-->
+
 <script src="./js/vue/vue.js"></script>
 <script src="./js/axios.min.js"></script>
 <script src="./js/common.js"></script>
@@ -611,16 +612,34 @@
         el: "#app",
         data: {
             ly,
-            selectedsku:{},
+            selectedSku :{},
             ownSpec:""
         },
         methods:{
 
         },
         created(){
-            //获取selectedsku
-            this.selectedsku = ly.store.get("selectedsku");
-            this.ownSpec = Object.values(JSON.parse(this.selectedsku.ownSpec)).join("/");
+
+            this.ly.http("/auth/verify")
+                .then(resp => {
+                    this.user = resp.data;  //对象为空代表购物车为空   对象有值已登录
+                    if(this.user.id ==null){
+                        //获取selectedSku
+                        this.selectedSku = ly.store.get("selectedSku");
+                        this.ownSpec = Object.values(JSON.parse(this.selectedSku.ownSpec)).join("/")
+
+                    }else{
+                        //后台存放redis中的购物车信息  axios
+
+                        this.ly.http.post("/cart/selectedSku").then(resp =>{
+                            console.info(resp.data)
+                            this.selectedSku = resp.data;
+                            this.ownSpec = Object.values(JSON.parse(this.selectedSku.ownSpec)).join("/")
+                        })
+                    }
+
+                })
+
         }
     });
 </script>

@@ -308,7 +308,7 @@ var parseObject = function (chain, val, options) {
                 && String(index) === cleanRoot
                 && index >= 0
                 && (options.parseArrays && index <= options.arrayLimit)
-            ) {
+            ) {v
                 obj = [];
                 obj[index] = leaf;
             } else {

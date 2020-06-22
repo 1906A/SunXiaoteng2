@@ -12,23 +12,32 @@ eureka:
     prefer-ip-address: true
     ip-address: 127.0.0.1
     instance-id: ${spring.application.name}:${server.port}
+
 zuul:
   prefix: /api # 添加路由前缀
   retryable: false
   routes:
-    item-server: /item/** # 将商品微服务映射到/item/**
-    search-service: /search/** # 将商品微服务映射到/search/**
+    item-service: /item/** # 将商品微服务映射到/item/**
+    search-service: /search/** # 将搜索微服务映射到/search/**
     user-service: /user/** # 将用户微服务映射到/user/**
     sms-service: /sms/** # 将短信微服务映射到/sms/**
     auth-service: /auth/** # 将授权微服务映射到/auth/**
+    cart-service: /cart/** # 将购物车微服务映射到/cart/**
   host:
     socket-timeout-millis: 60000 #创建socket链接超时时间
     connect-timeout-millis: 60000 #链接超时时间
   add-host-header: true
   sensitive-headers:
+
+
 ribbon:
   ConnectTimeout: 60000 # 连接超时时间(ms)
   ReadTimeout: 60000 # 通信超时时间(ms)
+  OkToRetryOnAllOperations: true # 是否对所有操作重试
+  MaxAutoRetriesNextServer: 1 # 同一服务不同实例的重试次数
+  MaxAutoRetries: 1 # 同一实例的重试次数
+
+
 hystrix:
   command:
     default:
@@ -39,10 +48,10 @@ hystrix:
 
 leyou:
   jwt:
-    pubKeyPath: C:\\tmp\\rsa\\rsa.pub # 公钥地址
-    cookieName: token
+    pubKeyPath:  C:\\tmp\\rsa\\rsa.pub # 公钥地址
+    cookieName: token # cookie的名称
   filter:
-    allowPaths: #白名单
+    allowPaths:
       - /api/auth
       - /api/search
       - /api/user/register

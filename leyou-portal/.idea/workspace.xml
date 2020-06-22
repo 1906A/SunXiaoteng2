@@ -1,9 +1,43 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ad45a7f9-2ba8-4844-b5ff-1e8da0c18b48" name="Default Changelist" comment="乐优商城">
-      <change beforePath="$PROJECT_DIR$/../leyou/ly-api-gateway/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-api-gateway/pom.xml" afterDir="false" />
+    <list default="true" id="e9578f8b-5906-4f61-b35c-4840cb65ff05" name="Default Changelist" comment="乐优商城前台-商品搜索">
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/LeyouOrderApplication.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/IdWorkerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/IdWorkerProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/JwtProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/MvcConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/PayConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/PayProperties.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/controller/OrderController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/interceptor/LoginInterceptor.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/mapper/OrderDetailMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/mapper/OrderMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/mapper/OrderStatusMapper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/pojo/Order.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/pojo/OrderDetail.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/pojo/OrderStatus.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/service/OrderService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/service/api/GoodsService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/utils/PayHelper.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/utils/PayState.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-cart/src/main/java/com/leyou/config/SwaggerConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-cart/src/main/java/com/leyou/pojo/SkuVo.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-common/src/main/java/com/leyou/utils/IdWorker.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../leyou/ly-common/src/main/java/com/leyou/utils/JsonUtils.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getOrderInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/getOrderInfo.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/success-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/success-cart.html" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/../leyou/ly-api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-api-gateway/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/ly-cart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-cart/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/ly-cart/src/main/java/com/leyou/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-cart/src/main/java/com/leyou/controller/CartController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/ly-cart/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-cart/src/main/resources/application.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/pom.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -14,126 +48,25 @@
   <component name="DefaultGradleProjectSettings">
     <option name="isMigrated" value="true" />
   </component>
+  <component name="FileColors">
+    <fileColor scope="All" color="c7edcc" />
+  </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/search.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="9130">
-              <caret line="415" column="20" selection-start-line="415" selection-start-column="20" selection-end-line="415" selection-end-column="20" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#i#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#6524#6528#1" expanded="true" />
-                <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="e#6639#6643#1" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/getOrderInfo.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="132">
-              <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/register.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="4378">
-              <caret line="199" column="55" selection-start-line="199" selection-start-column="55" selection-end-line="199" selection-end-column="55" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="254">
-              <caret line="117" column="50" selection-start-line="117" selection-start-column="50" selection-end-line="117" selection-end-column="50" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/item.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-12606">
-              <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
-              <folding>
-                <element signature="e#3208#3212#1" expanded="true" />
-                <element signature="e#4182#4186#1" expanded="true" />
-                <element signature="e#5778#5784#1" expanded="true" />
-                <element signature="e#6110#6116#1" expanded="true" />
-                <element signature="e#6442#6448#1" expanded="true" />
-                <element signature="e#6718#6724#1" expanded="true" />
-                <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/cart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="2305">
-              <caret line="367" column="9" lean-forward="true" selection-start-line="367" selection-start-column="9" selection-end-line="367" selection-end-column="9" />
-              <folding>
-                <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#span#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/success-cart.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="611">
-              <caret line="627" column="7" selection-start-line="627" selection-start-column="7" selection-end-line="627" selection-end-column="7" />
-              <folding>
-                <element signature="n#style#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
-                <element signature="n#style#0;n#div#1;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>76</find>
-      <find>push</find>
+      <find>top-pagination</find>
+      <find>新品</find>
+      <find>good</find>
       <find>filters</find>
-      <find>gotoPage</find>
-      <find>search/</find>
-      <find>index</find>
-      <find>v-for</find>
-      <find>search</find>
-      <find>this.search</find>
-      <find>data</find>
-      <find>items</find>
-      <find>goodList</find>
-      <find>/au</find>
+      <find>paramSpec</find>
+      <find>getFilterValue</find>
+      <find>selectAll</find>
+      <find>axios</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
-    <option name="ROOT_SYNC" value="DONT_SYNC" />
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
   <component name="IdeDocumentHistory">
@@ -142,9 +75,10 @@
         <option value="$PROJECT_DIR$/search.html" />
         <option value="$PROJECT_DIR$/register.html" />
         <option value="$PROJECT_DIR$/login.html" />
-        <option value="$PROJECT_DIR$/item.html" />
-        <option value="$PROJECT_DIR$/cart.html" />
+        <option value="$PROJECT_DIR$/js/common.js" />
         <option value="$PROJECT_DIR$/success-cart.html" />
+        <option value="$PROJECT_DIR$/cart.html" />
+        <option value="$PROJECT_DIR$/getOrderInfo.html" />
       </list>
     </option>
   </component>
@@ -157,13 +91,17 @@
   <component name="MavenImportPreferences">
     <option name="generalSettings">
       <MavenGeneralSettings>
-        <option name="localRepository" value="E:\java\mavenRepo" />
-        <option name="mavenHome" value="E:/java/apache-maven-3.5.0" />
-        <option name="userSettingsFile" value="E:\java\apache-maven-3.5.0\conf\settings.xml" />
+        <option name="mavenHome" value="D:/system/maven/apache-maven-3.5.4" />
+        <option name="userSettingsFile" value="D:\system\maven\apache-maven-3.5.4\conf\settings.xml" />
       </MavenGeneralSettings>
     </option>
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="vmOptionsForImporter" value="-Xmx768m" />
+      </MavenImportingSettings>
+    </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="7">
+  <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="126" />
     <option name="y" value="45" />
     <option name="width" value="1056" />
@@ -175,6 +113,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -182,17 +121,11 @@
               <item name="leyou-portal" type="b2602c69:ProjectViewProjectNode" />
               <item name="leyou-portal" type="462c0819:PsiDirectoryNode" />
             </path>
-            <path>
-              <item name="leyou-portal" type="b2602c69:ProjectViewProjectNode" />
-              <item name="leyou-portal" type="462c0819:PsiDirectoryNode" />
-              <item name="js" type="462c0819:PsiDirectoryNode" />
-            </path>
           </expand>
           <select />
         </subPane>
       </pane>
       <pane id="Scope" />
-      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -200,7 +133,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/.." />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -209,10 +142,9 @@
     <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
     <property name="nodejs_npm_path_reset_for_default_project" value="true" />
-    <property name="nodejs_package_manager_path" value="npm" />
-    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.last.edited" value="Project" />
     <property name="project.structure.proportion" value="0.0" />
-    <property name="project.structure.side.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
   </component>
   <component name="RunDashboard">
@@ -228,113 +160,96 @@
     </option>
   </component>
   <component name="SvnConfiguration">
-    <configuration />
+    <configuration>C:\Users\zhaoxuepu\AppData\Roaming\Subversion</configuration>
   </component>
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="ad45a7f9-2ba8-4844-b5ff-1e8da0c18b48" name="Default Changelist" comment="" />
-      <created>1590670154163</created>
+      <changelist id="e9578f8b-5906-4f61-b35c-4840cb65ff05" name="Default Changelist" comment="" />
+      <created>1590631423848</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1590670154163</updated>
-      <workItem from="1590670160426" duration="1728000" />
-      <workItem from="1590675581802" duration="1387000" />
-      <workItem from="1590711309742" duration="1042000" />
-      <workItem from="1590899147655" duration="615000" />
-      <workItem from="1590907477011" duration="3995000" />
-      <workItem from="1590922796754" duration="2098000" />
-      <workItem from="1590934088133" duration="3554000" />
-      <workItem from="1591014303208" duration="5448000" />
-      <workItem from="1591058428391" duration="3229000" />
-      <workItem from="1591079290353" duration="717000" />
-      <workItem from="1591080346973" duration="48000" />
-      <workItem from="1591082399751" duration="568000" />
-      <workItem from="1591091929212" duration="11329000" />
-      <workItem from="1591111638212" duration="107000" />
-      <workItem from="1591141020501" duration="1441000" />
-      <workItem from="1591142525535" duration="870000" />
-      <workItem from="1591164153363" duration="2034000" />
-      <workItem from="1591166633768" duration="5366000" />
-      <workItem from="1591193495947" duration="4097000" />
-      <workItem from="1591269110852" duration="727000" />
-      <workItem from="1591496393443" duration="348000" />
-      <workItem from="1591497541232" duration="15023000" />
-      <workItem from="1591609659890" duration="8472000" />
-      <workItem from="1591704866818" duration="821000" />
-      <workItem from="1592135446914" duration="15000" />
-      <workItem from="1592216960359" duration="1215000" />
-      <workItem from="1592319098256" duration="1765000" />
-      <workItem from="1592404671286" duration="828000" />
-      <workItem from="1592484639456" duration="2389000" />
+      <updated>1590631423848</updated>
+      <workItem from="1590631425734" duration="1745000" />
+      <workItem from="1590641695417" duration="647000" />
+      <workItem from="1590645303514" duration="1209000" />
+      <workItem from="1590711101528" duration="6035000" />
+      <workItem from="1590731020915" duration="2578000" />
+      <workItem from="1590912922086" duration="1849000" />
+      <workItem from="1590930279744" duration="43000" />
+      <workItem from="1590970642285" duration="16674000" />
+      <workItem from="1591057147048" duration="11989000" />
+      <workItem from="1591143370547" duration="12526000" />
+      <workItem from="1591229654500" duration="7953000" />
+      <workItem from="1591274429956" duration="410000" />
+      <workItem from="1591277729908" duration="1242000" />
+      <workItem from="1591316891857" duration="3343000" />
+      <workItem from="1591574929612" duration="3900000" />
+      <workItem from="1591661803707" duration="2891000" />
+      <workItem from="1591748296261" duration="1253000" />
+      <workItem from="1592144790868" duration="1062000" />
+      <workItem from="1592180154544" duration="3461000" />
+      <workItem from="1592224844203" duration="78000" />
+      <workItem from="1592266773841" duration="2842000" />
+      <workItem from="1592284818086" duration="2298000" />
+      <workItem from="1592359071051" duration="4926000" />
+      <workItem from="1592439495731" duration="13496000" />
+      <workItem from="1592525853080" duration="2552000" />
+      <workItem from="1592785132509" duration="12371000" />
     </task>
-    <task id="LOCAL-00001" summary="乐优商城后端">
-      <created>1591079574312</created>
+    <task id="LOCAL-00001" summary="乐优商城前台">
+      <created>1591059118429</created>
       <option name="number" value="00001" />
       <option name="presentableId" value="LOCAL-00001" />
       <option name="project" value="LOCAL" />
-      <updated>1591079574312</updated>
+      <updated>1591059118430</updated>
     </task>
-    <task id="LOCAL-00002" summary="乐优商城后端">
-      <created>1591079679619</created>
+    <task id="LOCAL-00002" summary="乐优商城前台">
+      <created>1591060845950</created>
       <option name="number" value="00002" />
       <option name="presentableId" value="LOCAL-00002" />
       <option name="project" value="LOCAL" />
-      <updated>1591079679619</updated>
+      <updated>1591060845950</updated>
     </task>
-    <task id="LOCAL-00003" summary="乐优商城后端">
-      <created>1591111713280</created>
+    <task id="LOCAL-00003" summary="乐优商城前台-首页商品加载">
+      <created>1591159392500</created>
       <option name="number" value="00003" />
       <option name="presentableId" value="LOCAL-00003" />
       <option name="project" value="LOCAL" />
-      <updated>1591111713280</updated>
+      <updated>1591159392500</updated>
     </task>
-    <task id="LOCAL-00004" summary="乐优商城">
-      <created>1591141284284</created>
+    <task id="LOCAL-00004" summary="乐优商城前台-首页商品加载+条件过滤">
+      <created>1591258996786</created>
       <option name="number" value="00004" />
       <option name="presentableId" value="LOCAL-00004" />
       <option name="project" value="LOCAL" />
-      <updated>1591141284284</updated>
+      <updated>1591258996786</updated>
     </task>
-    <task id="LOCAL-00005" summary="乐优商城后端">
-      <created>1591141768424</created>
+    <task id="LOCAL-00005" summary="乐优商城前台-商品搜索">
+      <created>1591607077779</created>
       <option name="number" value="00005" />
       <option name="presentableId" value="LOCAL-00005" />
       <option name="project" value="LOCAL" />
-      <updated>1591141768424</updated>
+      <updated>1591607077779</updated>
     </task>
-    <task id="LOCAL-00006" summary="乐优商城">
-      <created>1591142352871</created>
+    <task id="LOCAL-00006" summary="乐优商城前台-登录注册">
+      <created>1592224892675</created>
       <option name="number" value="00006" />
       <option name="presentableId" value="LOCAL-00006" />
       <option name="project" value="LOCAL" />
-      <updated>1591142352871</updated>
+      <updated>1592224892675</updated>
     </task>
-    <task id="LOCAL-00007" summary="乐优商城">
-      <created>1591142587926</created>
+    <task id="LOCAL-00007" summary="乐优商城前台-实现购物车">
+      <created>1592797074486</created>
       <option name="number" value="00007" />
       <option name="presentableId" value="LOCAL-00007" />
       <option name="project" value="LOCAL" />
-      <updated>1591142587926</updated>
+      <updated>1592797074486</updated>
     </task>
-    <task id="LOCAL-00008" summary="乐优商城">
-      <created>1591200636785</created>
-      <option name="number" value="00008" />
-      <option name="presentableId" value="LOCAL-00008" />
-      <option name="project" value="LOCAL" />
-      <updated>1591200636785</updated>
-    </task>
-    <task id="LOCAL-00009" summary="乐优商城">
-      <created>1591201098551</created>
-      <option name="number" value="00009" />
-      <option name="presentableId" value="LOCAL-00009" />
-      <option name="project" value="LOCAL" />
-      <updated>1591201098551</updated>
-    </task>
-    <option name="localTasksCounter" value="10" />
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="81276000" />
+    <option name="totallyTimeSpent" value="120694000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -346,76 +261,160 @@
     </todo-panel>
   </component>
   <component name="ToolWindowManager">
-    <frame x="-7" y="-7" width="1295" height="695" extended-state="7" />
-    <editor active="true" />
+    <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.2603072" />
+      <window_info content_ui="combo" id="Project" order="0" weight="0.28860146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Image Layers" order="2" />
-      <window_info id="Designer" order="3" />
-      <window_info id="UI Designer" order="4" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="Favorites" order="6" side_tool="true" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.3285968" />
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="8" weight="0.3268206" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" sideWeight="0.4995958" weight="0.37833038" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.5004042" side_tool="true" weight="0.28063944" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.35523978" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.24252222" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
       <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Theme Preview" order="4" />
-      <window_info anchor="right" id="Maven" order="5" />
-      <window_info anchor="right" id="Mybatis datasource" order="6" side_tool="true" />
-      <window_info anchor="right" id="Capture Analysis" order="7" />
-      <window_info anchor="right" id="Palette&#9;" order="8" />
-      <window_info anchor="right" id="Database" order="9" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Mybatis datasource" order="5" side_tool="true" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
     </layout>
+    <layout-to-restore>
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25075528" />
+      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
+      <window_info id="Designer" order="2" />
+      <window_info id="UI Designer" order="3" />
+      <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info anchor="bottom" id="Message" order="0" />
+      <window_info anchor="bottom" id="Find" order="1" />
+      <window_info anchor="bottom" id="Run" order="2" />
+      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="6" weight="0.32899022" />
+      <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Version Control" order="8" />
+      <window_info anchor="bottom" id="Database Changes" order="9" />
+      <window_info anchor="bottom" id="Terminal" order="10" weight="0.58957654" />
+      <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
+      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
+      <window_info anchor="right" id="Palette" order="3" />
+      <window_info anchor="right" id="Maven" order="4" />
+      <window_info anchor="right" id="Mybatis datasource" order="5" side_tool="true" />
+      <window_info anchor="right" id="Database" order="6" />
+      <window_info anchor="right" id="Palette&#9;" order="7" />
+    </layout-to-restore>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="乐优商城后端" />
-    <MESSAGE value="乐优商城" />
-    <option name="LAST_COMMIT_MESSAGE" value="乐优商城" />
-  </component>
-  <component name="antWorkspaceConfiguration">
-    <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
-    <option name="FILTER_TARGETS" value="false" />
+    <ignored-roots>
+      <path value="$PROJECT_DIR$" />
+    </ignored-roots>
+    <MESSAGE value="乐优商城前台" />
+    <MESSAGE value="乐优商城前台-首页商品加载" />
+    <MESSAGE value="乐优商城前台-首页商品加载+条件过滤" />
+    <MESSAGE value="乐优商城前台-商品搜索" />
+    <MESSAGE value="乐优商城前台-登录注册" />
+    <MESSAGE value="乐优商城前台-实现购物车" />
+    <option name="LAST_COMMIT_MESSAGE" value="乐优商城前台-实现购物车" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/js/common.js">
+    <entry file="file://$PROJECT_DIR$/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="110">
-          <caret line="515" column="30" lean-forward="true" selection-start-line="515" selection-start-column="30" selection-end-line="515" selection-end-column="30" />
+        <state relative-caret-position="1159">
+          <caret line="579" column="13" selection-start-line="579" selection-start-column="13" selection-end-line="579" selection-end-column="13" />
+          <folding>
+            <element signature="n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#1;n#body#0;n#html#0;n#!!top" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/search.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="9130">
-          <caret line="415" column="20" selection-start-line="415" selection-start-column="20" selection-end-line="415" selection-end-column="20" />
+        <state relative-caret-position="379">
+          <caret line="375" column="23" selection-start-line="375" selection-start-column="23" selection-end-line="375" selection-end-column="23" />
           <folding>
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#span#0;n#li#0;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#1;n#ul#1;n#div#0;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#a#0;n#li#1;n#ul#0;n#div#1;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#2;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#span#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#i#0;n#span#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#2;n#div#1;n#div#1;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
             <element signature="n#style#0;n#a#0;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6524#6528#1" expanded="true" />
             <element signature="n#style#0;n#a#1;n#div#0;n#div#0;n#div#0;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="e#6639#6643#1" expanded="true" />
+            <element signature="n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#2;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="3781">
+          <caret line="199" column="55" selection-start-line="199" selection-start-column="52" selection-end-line="199" selection-end-column="55" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/pages/shortcut.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="526">
+          <caret line="47" column="29" selection-start-line="47" selection-start-column="17" selection-end-line="47" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/common.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="227">
+          <caret line="519" column="8" selection-start-line="519" selection-start-column="6" selection-end-line="519" selection-end-column="8" />
+          <folding>
+            <element signature="e#224#420#0" />
+            <element signature="e#570#6538#0" />
+            <element signature="e#596#1098#0" />
+            <element signature="e#6581#7289#0" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1438">
+          <caret line="116" column="49" selection-start-line="116" selection-start-column="49" selection-end-line="116" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/success-cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="108">
+          <caret line="622" column="12" lean-forward="true" selection-start-line="622" selection-start-column="12" selection-end-line="640" selection-end-column="18" />
+          <folding>
+            <element signature="n#div#1;n#html#0;n#!!top" />
+            <element signature="n#div#2;n#html#0;n#!!top" />
+            <element signature="n#div#3;n#html#0;n#!!top" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="222">
+          <caret line="301" column="59" selection-start-line="301" selection-start-column="55" selection-end-line="301" selection-end-column="59" />
+          <folding>
+            <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#ul#0;n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
@@ -423,92 +422,32 @@
     <entry file="file://$PROJECT_DIR$/getOrderInfo.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
-          <caret line="6" column="65" selection-start-line="6" selection-start-column="65" selection-end-line="6" selection-end-column="65" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4378">
-          <caret line="199" column="55" selection-start-line="199" selection-start-column="55" selection-end-line="199" selection-end-column="55" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/login.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="254">
-          <caret line="117" column="50" selection-start-line="117" selection-start-column="50" selection-end-line="117" selection-end-column="50" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/item.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-12606">
-          <caret line="96" column="18" lean-forward="true" selection-start-line="96" selection-start-column="18" selection-end-line="96" selection-end-column="18" />
+          <caret line="114" column="37" lean-forward="true" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
           <folding>
-            <element signature="e#3208#3212#1" expanded="true" />
-            <element signature="e#4182#4186#1" expanded="true" />
-            <element signature="e#5778#5784#1" expanded="true" />
-            <element signature="e#6110#6116#1" expanded="true" />
-            <element signature="e#6442#6448#1" expanded="true" />
-            <element signature="e#6718#6724#1" expanded="true" />
-            <element signature="n#style#0;n#ul#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#2;n#div#0;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#4;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
+            <element signature="n#div#5;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/success-cart.html">
+    <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="611">
-          <caret line="627" column="7" selection-start-line="627" selection-start-column="7" selection-end-line="627" selection-end-column="7" />
-          <folding>
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#0;n#ul#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#2;n#ul#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#li#3;n#ul#0;n#div#0;n#div#3;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="679">
+          <caret line="540" column="10" selection-start-line="540" selection-start-column="10" selection-end-line="540" selection-end-column="10" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="2305">
-          <caret line="367" column="9" lean-forward="true" selection-start-line="367" selection-start-column="9" selection-end-line="367" selection-end-column="9" />
-          <folding>
-            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-            <element signature="n#style#0;n#span#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
-        </state>
-      </provider>
+    <entry file="file://$PROJECT_DIR$/.idea/modules.xml">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
+      <provider selected="true" editor-type-id="text-editor" />
     </entry>
   </component>
   <component name="masterDetails">
     <states>
-      <state key="ArtifactsStructureConfigurable.UI">
-        <settings>
-          <artifact-editor />
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
-      <state key="FacetStructureConfigurable.UI">
-        <settings>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="GlobalLibrariesConfigurable.UI">
         <settings>
           <splitter-proportions>
@@ -531,19 +470,6 @@
           </splitter-proportions>
         </settings>
       </state>
-      <state key="ModuleStructureConfigurable.UI">
-        <settings>
-          <last-edited>leyou-portal</last-edited>
-          <splitter-proportions>
-            <option name="proportions">
-              <list>
-                <option value="0.2" />
-                <option value="0.6" />
-              </list>
-            </option>
-          </splitter-proportions>
-        </settings>
-      </state>
       <state key="ProjectJDKs.UI">
         <settings>
           <last-edited>1.8</last-edited>
@@ -557,6 +483,17 @@
         </settings>
       </state>
       <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ScopeChooserConfigurable.UI">
         <settings>
           <splitter-proportions>
             <option name="proportions">
