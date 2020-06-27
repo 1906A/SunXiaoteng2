@@ -5,7 +5,7 @@ spring:
   application:
     name: order-service
   datasource:
-    url: jdbc:mysql://localhost:3306/leyou?useUnicode=true&characterEncoding=UTF-8&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+    url: jdbc:mysql://127.0.0.1:3306/leyou?useUnicode=true&characterEncoding=utf8&autoReconnect=true&allowMultiQueries=true&serverTimezone=UTC
     username: root
     password: root
     driver-class-name: com.mysql.jdbc.Driver
@@ -45,8 +45,8 @@ leyou:
     pubKeyPath: C:\\tmp\\rsa\\rsa.pub # 公钥地址
     cookieName: token # cookie的名称
   pay:
-    appId: wx8397f8696b538317
-    mchId: 1473426802
-    key: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb
+    appId: wx8397f8696b538317 #当前接入支付的唯一标识
+    mchId: 1473426802   #商户id
+    key: T6m9iK73b0kn9g5v426MKfHQH7X8rKwb #类似加密
     connectTimeoutMs: 5000
     readTimeoutMs: 10000

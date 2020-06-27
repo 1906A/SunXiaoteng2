@@ -2,42 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="e9578f8b-5906-4f61-b35c-4840cb65ff05" name="Default Changelist" comment="乐优商城前台-商品搜索">
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/LeyouOrderApplication.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/IdWorkerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/IdWorkerProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/JwtProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/MvcConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/PayConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/PayProperties.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/controller/OrderController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/interceptor/LoginInterceptor.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/mapper/OrderDetailMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/mapper/OrderMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/mapper/OrderStatusMapper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/pojo/Order.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/pojo/OrderDetail.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/pojo/OrderStatus.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/service/OrderService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/order/service/api/GoodsService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/utils/PayHelper.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/java/com/leyou/utils/PayState.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/resources/mapper/OrderMapper.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/ly-cart/src/main/java/com/leyou/config/SwaggerConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/ly-cart/src/main/java/com/leyou/pojo/SkuVo.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/ly-common/src/main/java/com/leyou/utils/IdWorker.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../leyou/ly-common/src/main/java/com/leyou/utils/JsonUtils.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/getOrderInfo.html" beforeDir="false" afterPath="$PROJECT_DIR$/getOrderInfo.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/js/common.js" beforeDir="false" afterPath="$PROJECT_DIR$/js/common.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/login.html" beforeDir="false" afterPath="$PROJECT_DIR$/login.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/success-cart.html" beforeDir="false" afterPath="$PROJECT_DIR$/success-cart.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/ly-api-gateway/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-api-gateway/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/ly-cart/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-cart/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/ly-cart/src/main/java/com/leyou/controller/CartController.java" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-cart/src/main/java/com/leyou/controller/CartController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/ly-cart/src/main/resources/application.yml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/ly-cart/src/main/resources/application.yml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../leyou/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../leyou/leyou-order/src/main/resources/application.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/../leyou/leyou-order/src/main/resources/application.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -52,7 +18,31 @@
     <fileColor scope="All" color="c7edcc" />
   </component>
   <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300" />
+    <leaf>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/getOrderInfo.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="380" column="7" selection-start-line="380" selection-start-column="7" selection-end-line="380" selection-end-column="7" />
+              <folding>
+                <element signature="e#1309#1315#1" expanded="true" />
+                <element signature="e#1665#1671#0" expanded="true" />
+                <element signature="e#1671#1677#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/pay.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="266">
+              <caret line="137" column="7" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
@@ -79,6 +69,7 @@
         <option value="$PROJECT_DIR$/success-cart.html" />
         <option value="$PROJECT_DIR$/cart.html" />
         <option value="$PROJECT_DIR$/getOrderInfo.html" />
+        <option value="$PROJECT_DIR$/pay.html" />
       </list>
     </option>
   </component>
@@ -113,6 +104,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="PackagesPane" />
       <pane id="ProjectPane">
         <subPane>
@@ -125,7 +117,6 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -133,7 +124,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/js" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.detected.package.tslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
@@ -146,6 +137,11 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="settings.editor.selected.configurable" value="project.propVCSSupport.Mappings" />
+  </component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\java\1906A\leyou-portal\js" />
+    </key>
   </component>
   <component name="RunDashboard">
     <option name="ruleStates">
@@ -195,6 +191,8 @@
       <workItem from="1592439495731" duration="13496000" />
       <workItem from="1592525853080" duration="2552000" />
       <workItem from="1592785132509" duration="12371000" />
+      <workItem from="1593246062475" duration="642000" />
+      <workItem from="1593249394676" duration="3265000" />
     </task>
     <task id="LOCAL-00001" summary="乐优商城前台">
       <created>1591059118429</created>
@@ -249,7 +247,7 @@
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="120694000" />
+    <option name="totallyTimeSpent" value="124601000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -262,12 +260,15 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1295" height="695" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info content_ui="combo" id="Project" order="0" weight="0.28860146" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.28860146" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Designer" order="2" />
       <window_info id="UI Designer" order="3" />
       <window_info id="Favorites" order="4" side_tool="true" />
+      <window_info id="Image Layers" order="5" />
+      <window_info id="Capture Tool" order="6" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="bottom" id="Run" order="2" />
@@ -278,7 +279,7 @@
       <window_info anchor="bottom" id="Docker" order="7" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" order="8" />
       <window_info anchor="bottom" id="Database Changes" order="9" />
-      <window_info anchor="bottom" id="Terminal" order="10" weight="0.35523978" />
+      <window_info anchor="bottom" id="Terminal" order="10" visible="true" weight="0.35523978" />
       <window_info anchor="bottom" id="Event Log" order="11" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -288,6 +289,8 @@
       <window_info anchor="right" id="Mybatis datasource" order="5" side_tool="true" />
       <window_info anchor="right" id="Database" order="6" />
       <window_info anchor="right" id="Palette&#9;" order="7" />
+      <window_info anchor="right" id="Theme Preview" order="8" />
+      <window_info anchor="right" id="Capture Analysis" order="9" />
     </layout>
     <layout-to-restore>
       <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.25075528" />
@@ -407,31 +410,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/cart.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="222">
-          <caret line="301" column="59" selection-start-line="301" selection-start-column="55" selection-end-line="301" selection-end-column="59" />
-          <folding>
-            <element signature="n#div#3;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#ul#0;n#div#4;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/getOrderInfo.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="132">
-          <caret line="114" column="37" lean-forward="true" selection-start-line="114" selection-start-column="37" selection-end-line="114" selection-end-column="37" />
-          <folding>
-            <element signature="n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#0;n#div#0;n#div#1;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#4;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-            <element signature="n#div#5;n#div#1;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/.idea/workspace.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="679">
@@ -444,6 +422,55 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/.idea/vcs.xml">
       <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/qrcode.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <folding>
+            <element signature="n#style#0;n#table#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/js/qrcode.min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="52" lean-forward="true" selection-start-column="52" selection-end-column="52" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/cart.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="462" column="7" selection-start-line="462" selection-start-column="7" selection-end-line="462" selection-end-column="7" />
+          <folding>
+            <element signature="n#style#0;n#span#0;n#div#1;n#div#0;n#li#1;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#2;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#li#3;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#span#0;n#li#4;n#ul#0;n#div#0;n#div#0;n#div#1;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/getOrderInfo.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="380" column="7" selection-start-line="380" selection-start-column="7" selection-end-line="380" selection-end-column="7" />
+          <folding>
+            <element signature="e#1309#1315#1" expanded="true" />
+            <element signature="e#1665#1671#0" expanded="true" />
+            <element signature="e#1671#1677#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/pay.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="266">
+          <caret line="137" column="7" selection-start-line="137" selection-start-column="7" selection-end-line="137" selection-end-column="7" />
+        </state>
+      </provider>
     </entry>
   </component>
   <component name="masterDetails">

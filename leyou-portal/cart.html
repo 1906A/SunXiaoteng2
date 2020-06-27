@@ -28,10 +28,12 @@
 
         <!--All goods-->
         <div class="allgoods">
-            <h4>全部商品<span>11</span></h4>
+            <h4>全部商品<span>{{carts.length}}}</span></h4>
             <div class="cart-main">
                 <div class="yui3-g cart-th">
-                    <div class="yui3-u-1-4"><input type="checkbox" value="false" v-model="allSelect" @click="selectAll"  /> 全部</div>
+                    <div class="yui3-u-1-4"><input type="checkbox" value="true" v-model="allSelect"
+                                                   @click="selectAll"/> 全部
+                    </div>
                     <div class="yui3-u-1-4">商品</div>
                     <div class="yui3-u-1-8">单价（元）</div>
                     <div class="yui3-u-1-8">数量</div>
@@ -44,29 +46,31 @@
                         <div class="cart-list">
                             <ul class="goods-list yui3-g" v-for="(cart,i) in carts">
                                 <li class="yui3-u-1-24">
-                                    <input type="checkbox" name="" :value="cart" v-model="selected" />
+                                    <input type="checkbox" name="" :value="cart" v-model="selected"/>
                                 </li>
                                 <li class="yui3-u-11-24">
                                     <div class="good-item">
                                         <div class="item-img"><img :src="cart.images" width="80px" height="80px"/></div>
                                         <div class="item-msg">
 												<span style="line-height:70px ">
-													{{cart.title}}
+                                                    {{cart.title}}
                                                     {{Object.values(JSON.parse(cart.ownSpec)).join("/")}}
 												</span>
                                         </div>
                                     </div>
                                 </li>
 
-                                <li class="yui3-u-1-8"><span style="line-height:70px " class="price">{{ly.formatPrice(cart.price)}}</span></li>
+                                <li class="yui3-u-1-8"><span style="line-height:70px " class="price">{{ly.formatPrice(cart.price)}}</span>
+                                </li>
                                 <li class="yui3-u-1-8" style="padding-top: 20px">
                                     <a href="javascript:void(0)" class="increment mins" @click="jian(cart)">-</a>
-                                    <input autocomplete="off" type="text" v-model="cart.num" minnum="1" class="itxt" />
-                                    <a href="javascript:void(0)" class="increment plus" @click="add(cart)">+</a>
+                                    <input autocomplete="off" type="text" v-model="cart.num" minnum="1" class="itxt"/>
+                                    <a href="javascript:void(0)" class="increment plus" @click="jia(cart)">+</a>
                                 </li>
-                                <li class="yui3-u-1-8"><span style="line-height:70px " class="sum">{{ly.formatPrice(cart.price*cart.num)}}</span></li>
+                                <li class="yui3-u-1-8"><span style="line-height:70px " class="sum">{{ly.formatPrice(cart.price*cart.num)}}</span>
+                                </li>
                                 <li class="yui3-u-1-8">
-                                    <a href="#none" @click="deleteCart(cart,i)">删除</a><br />
+                                    <a href="#none" @click="deleteCart(cart,i)">删除</a><br/>
                                     <a href="#none">移到我的关注</a>
                                 </li>
                             </ul>
@@ -77,18 +81,18 @@
             </div>
             <div class="cart-tool">
                 <div class="select-all">
-                    <input type="checkbox" name="" id="" value=""/>
+                    <input type="checkbox" value="true" v-model="allSelect" @click="selectAll"/>
                     <span>全选</span>
                 </div>
                 <div class="option">
-                    <a href="#none">删除选中的商品</a>
+                    <a href="#none" @click="delCarts()">删除选中的商品</a>
                     <a href="#none">移到我的关注</a>
                     <a href="#none">清除下柜商品</a>
                 </div>
                 <div class="toolbar">
                     <div class="chosed">已选择<span>{{selected.length}}</span>件商品</div>
                     <div class="sumprice">
-                        <span><em>总价（不含运费） ：</em><i class="summoney">{{totalPrice}}</i></span>
+                        <span><em>总价（不含运费） ：</em><i class="summoney">{{totlePrice}}</i></span>
                         <span><em>已节省：</em><i>-¥20.00</i></span>
                     </div>
                     <div class="sumbtn">
@@ -265,137 +269,183 @@
         el: "#cartApp",
         data: {
             ly,
-            carts:[],
-            selected:[],
-            allSelect : true,
-            totalPrice : 0
+            carts: [],
+            selected: [],
+            allSelect: false,
+            totlePrice: 0,
         },
-        created(){
-            this.ly.http("/auth/verify")
-                .then(resp => {
-                    this.user = resp.data;  //对象为空代表购物车为空   对象有值已登录
-                    if(this.user.id ==null){
-                        this.carts = ly.store.get("carts");
+        created() {
+
+            this.ly.http("/auth/verify").then(res => {
+                this.user = res.data;
+                if (this.user.id == null) {
+                    this.carts = ly.store.get("carts")
+                    this.selected = this.carts;
+                } else {
+                    // alert("已登录")
+
+                    this.ly.http("/cart/getCart").then(value => {
+                        this.carts = value.data;
+                        this.carts.image = value.data.images;
                         this.selected = this.carts;
-                    }else{
-
-                        this.ly.http.post("/cart/query").then(resp =>{
-                            console.info(resp.data)
-                            this.carts= resp.data;
-                            this.selected = this.carts;
-                        })
-                    }
-
-                })
-        },
-        methods:{
-            toPay(){
-                //判断用户是否登录
-                this.ly.http("/auth/verify")
-                    .then(resp => {
-                        this.user = resp.data;  //对象为空代表购物车为空   对象有值已登录
-                        if(this.user.id ==null){
-                            //未登录
-                            location.href="http://www.leyou.com/login.html?returnUrl="+location.href;
-                        }else{
-                            //已登录  把选择的商品放入到本地local storage
-                            ly.store.set("js_selected",this.selected)
-                            window.open("http://www.leyou.com/getOrderInfo.html",target="_blank")
-                        }
 
                     })
-            },
-            deleteCart(cart,i){
+                }
+            })
+        },
+        methods: {
+            toPay() {
+                //去支付页面,必须是登录状态
                 this.ly.http("/auth/verify")
-                    .then(resp => {
-                        let user = resp.data;
-                        if(user.id!=null){
-                            //alert("登录了");
-                            let id = cart.id
-                            this.ly.http.post("/cart/delete?id="+id).then(resp =>{
+                    .then(value => {
+                        let user = value.data;
+                        if (user.id == null) {
+                            alert("未登录")
+                            //未登录
+                            location.href = "http://www.leyou.com/login.html?returnUrl=" + location.href;
+                        } else {
+
+                            ly.store.set("js_selected",this.selected);
+                            //已登录
+                            window.open("http://www.leyou.com/getOrderInfo.html",target="_black")
+                        }
+                    })
+            },
+            delCarts() { //当前商品和所属下标
+                this.ly.http("/auth/verify")
+                    .then(value => {
+                        let user = value.data;
+
+                        if (user.id == null) {
+                            // alert("未登录");
+                            for (let j = 0; j < this.selected.length; j++) {
+
+                            }
+
+                            //数量发生变化时对local storege 的数据刷新
+                            ly.store.set("carts", this.carts);
+                        } else {
+                            alert("已登录")
+                        }
+                    });
+
+            },
+            deleteCart(cart, i) { //当前商品和所属下标
+                this.ly.http("/auth/verify")
+                    .then(value => {
+                        let user = value.data;
+
+                        if (user.id == null) {
+
+                            this.carts.splice(i, 1);//删除数组的指定下标的元素 splice(下标,要删除的数量)
+                            //数量发生变化时对local storege 的数据刷新
+                            ly.store.set("carts", this.carts);
+                        } else {
+                            // alert("已登录")
+                            this.ly.http.post("/cart/deleteCart?id=" + cart.id).then(val => {
+                                //刷新页面
                                 window.location.reload();
                             })
-                        }else{
-                            this.carts.splice(i,1);   //删除是删除数组中的某个元素   splice
-                            ly.store.set("carts",this.carts)
+
                         }
-                    })
+                    });
+
             },
-            selectAll(){
-                //alert(this.allSelect);
-                if(this.allSelect){
-                    // true 不全选
-                    this.selected = [];
-                }else{
-                    //false 全选
+            selectAll() {
+//              全选/全不选
+                if (!this.allSelect) {
+
+                    //true 将local storege中的key为carts的所有对象放进去,
+                    // 在单个的单选框中默认使用:value去对应v-model值,一致会选中当前框
                     this.selected = this.carts;
+
+                } else {
+                    //false 将v-model的值清空,:value就对应不到一致的值,就不会选中
+                    this.selected = [];
+
                 }
             },
-            jian(cart){
-                if(cart.num>1){
-                    cart.num --;
-                }
-                for (let i = 0; i <this.selected.length ; i++) {
-                    if(this.selected.id == cart.id){
-                        this.selected.num = cart.num;
-                    }
-                }
-                this.ly.http("/auth/verify")
-                    .then(resp => {
-                        let user = resp.data;
-                        if(user.id!=null){
-                            //alert("登录了");
-                            //刷新后台redis
-                            this.ly.http.post("/cart/update",cart).then(resp =>{
-
-                            })
-                        }else{
-                            ly.store.set("carts",this.carts)
-                        }
-                    })
-            } ,
-            add(cart){
+            jia(cart) {
                 cart.num++;
-                for (let i = 0; i <this.selected.length ; i++) {
-                    if(this.selected.id == cart.id){
+
+                this.ly.http("/auth/verify")
+                    .then(value => {
+                        let user = value.data;
+
+                        if (user.id == null) {
+                            //数量发生变化时对local storege 的数据刷新
+                            ly.store.set("carts", this.carts);
+                        } else {
+                            // alert("已登录")
+                            this.ly.http.post("/cart/updateCart", cart).then(val => {
+                                // console.log(cart);
+                            })
+
+
+                        }
+                    });
+                //刷新selected的数量
+                for (let i = 0; i < this.selected.length; i++) {
+                    if (this.selected.id == cart.id) {
                         this.selected.num = cart.num;
                     }
                 }
-                this.ly.http("/auth/verify")
-                    .then(resp => {
-                        let user = resp.data;
-                        if(user.id!=null){
-                            this.ly.http.post("/cart/update",cart).then(resp =>{
 
-                            })
-                        }else{
-                            ly.store.set("carts",this.carts)
+            },
+            jian(cart) {
+                if (cart.num > 1) {
+                    cart.num--;
+
+                    this.ly.http("/auth/verify")
+                        .then(value => {
+                            let user = value.data;
+
+                            if (user.id == null) {
+
+                                //数量发生变化时对local storege 的数据刷新
+                                ly.store.set("carts", this.carts);
+                            } else {
+                                this.ly.http.post("/cart/updateCart", cart).then(val => {
+                                    // console.log(cart);
+                                })
+
+                            }
+                        });
+                    //刷新selected的数量
+                    for (let i = 0; i < this.selected.length; i++) {
+                        if (this.selected.id == cart.id) {
+                            this.selected.num = cart.num;
                         }
-                    })
+                    }
 
+                }
             }
         },
-        watch:{
-            selected:{
-                deep :true, //深度监控
-                handler(newVal,oldVal){
-                    if(newVal.length == this.carts.length){
-                        this.allSelect =true;
-                    }else{
-                        this.allSelect =false;
+        watch: { //监控属性 selected
+            selected: {
+                deep: true, //开启深度监控一般是针对对象,基本数据类型不需要开启
+                handler(newVal) {   //newVal 就是当前的selected数组的数据
+
+                    if (newVal.length == this.carts.length) {
+                        this.allSelect = true;
+                    } else {
+                        this.allSelect = false;
                     }
 
+                    //监控价格小计变化
                     let price = 0;
-                    for (let i = 0; i <newVal.length ; i++) {
-                        price = price +newVal[i].price * newVal[i].num;
+
+                    for (let i = 0; i < newVal.length; i++) {
+                        //遍历 newVal 把多个商品的商品小计相加
+                        price += newVal[i].price * newVal[i].num;
                     }
-                    this.totalPrice = ly.formatPrice(price) ;
+                    this.totlePrice = ly.formatPrice(price);
                 }
             }
         },
         components: {
             shortcut: () => import("/js/pages/shortcut.js")
-        }
+        },
     })
 </script>
 <!-- 底部栏位 -->
