@@ -39,9 +39,9 @@ public class LoginFilter extends ZuulFilter {
     public boolean shouldFilter() {
         //获取上下文
         RequestContext context = RequestContext.getCurrentContext();
-//获取request
+        //获取request
         HttpServletRequest request = context.getRequest();
-//获取请求的url
+        //获取请求的url
         String requestURL = request.getRequestURI();
 
         //遍历白名单
@@ -64,7 +64,7 @@ public class LoginFilter extends ZuulFilter {
         RequestContext context = RequestContext.getCurrentContext();
 
         HttpServletRequest request = context.getRequest();
-//获取token
+        //获取token
         String token = CookieUtils.getCookieValue(request, jwtProperties.getCookieName());
 
         try {
